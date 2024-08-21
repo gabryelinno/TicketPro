@@ -1,5 +1,4 @@
 # Sistema-de-Chamado
-### Título: Desenvolvimento de um Sistema de Chamado
 
 ### Time: CodeWave
 
