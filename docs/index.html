@@ -6,10 +6,20 @@
     <title>TicketPro</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/gestao-de-dados (1).png" type="image/x-icon">
+    <script>
+        function validarFormulario(event) {
+            var senha = document.getElementById("senha").value;
+            var confirmarSenha = document.getElementById("confirmar_senha").value;
+            if (senha !== confirmarSenha) {
+                alert("As senhas não coincidem!");
+                event.preventDefault(); // Impede o envio do formulário
+            }
+        }
+    </script>
 </head>
 <body>
     <h1>Cadastro de Usuário</h1>
-    <form action="/cadastrar" method="post">
+    <form action="/cadastrar" method="post" onsubmit="validarFormulario(event)">
         <p>
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
