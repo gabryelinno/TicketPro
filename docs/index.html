@@ -9,12 +9,18 @@
     <script>
         function validarFormulario(event) {
             var senha = document.getElementById("senha").value;
-            var confirmarSenha = document.getElementById("confirmar_senha").value;
+            var confirmarSenha = document.getElementById("confirmarSenha").value;
             if (senha !== confirmarSenha) {
                 alert("As senhas não coincidem!");
                 event.preventDefault(); // Impede o envio do formulário
             }
         }
+
+        // Adiciona o event listener para a validação do formulário
+        document.addEventListener("DOMContentLoaded", function() {
+            var form = document.getElementById("formCadastro");
+            form.addEventListener("submit", validarFormulario);
+        });
     </script>
 </head>
 <body>
