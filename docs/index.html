@@ -1,45 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TicketPro</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/gestao-de-dados (1).png" type="image/x-icon">
-    <script>
-        function validarFormulario(event) {
-            var senha = document.getElementById("senha").value;
-            var confirmarSenha = document.getElementById("confirmar_senha").value;
-            if (senha !== confirmarSenha) {
-                alert("As senhas não coincidem!");
-                event.preventDefault(); // Impede o envio do formulário
-            }
-        }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <h1>Cadastro de Usuário</h1>
-    <form class="formulario" id="formCadastro" action="/caminho-para-seu-script" method="post">
-        <h1>Criar Conta</h1>
-        
-        <label for="usuario">Usuário:</label>
-        <input type="text" id="usuario" name="usuario" minlength="3" maxlength="20" required 
-               placeholder="Digite seu usuário">
-        <br>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
-        <br>
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" minlength="6" required 
-               placeholder="Digite sua senha">
-        <br>
-        <label for="confirmarSenha">Confirmar Senha:</label>
-        <input type="password" id="confirmarSenha" name="confirmarSenha" minlength="6" required 
-               placeholder="Confirme sua senha">
-        <br>
-        <button type="submit">Criar Conta</button>
-        <br>
-        <p class="link-entrar">Já tem uma conta? <a href="login.html">Entre aqui</a></p>
-    </form>
+
+    <h1>Bem vindo ao Sistema de Chamados TicketPro</h1>
+
+    <div>
+        <h3>Já possui uma conta? Entre na sua conta e aproveite o melhor Sistema de Gerenciamento de</h3>
+        <a href="login.html">
+            <button id="bt-log">Login</button>
+        </a>
+    </div>
+
+    <div>
+        <h3>Novo por aqui? Então crie uma conta nova para começar a usar nosso sistema!</h3>
+        <a href="cadastro.html">
+            <button id="bt-cad">Cadastro</button>
+        </a>
+    </div>
+
 </body>
+
 </html>

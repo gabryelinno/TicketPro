@@ -1,0 +1,94 @@
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0%;
+}
+
+/* Tela de Login */
+
+.retangulo-login {
+    display: flex;
+    width: 53%;
+    height: 100%;
+    background-color: #11C870;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+#img-login {
+    height: 500px;
+    width: auto;
+    align-items: center;
+}
+
+#h1-login {
+    color: white;
+    font-weight: 700;
+    margin: 20px;
+}
+
+#entrar-conta-login {
+    color: #11C870;
+}
+
+.fundo-login {
+    width: 400px;
+    height: 500px;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 5%;
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#bt-usuario {
+    height: 40px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+#bt-senha {
+    height: 40px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+#bt-entrar{
+    height: 40px;
+    width: 300px;
+    font-family: ;
+    font-size: 16px;
+    background-color: #11C870;
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+.link-criar-conta {
+    color: #11C870;
+}
+
+/* Tela de Cadastro */
+
+#bt-email {
+    height: 40px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+#bt-criar-conta{
+    height: 40px;
+    width: 300px;
+    font-family: ;
+    font-size: 16px;
+    background-color: #11C870;
+    color: #ffffff;
+    border-radius: 30px;
+}
