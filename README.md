@@ -1,6 +1,11 @@
 # 🎫 TicketPro - Sistema de Chamados
 
-### 🚀 Desenvolvido por: **CodeWave**
+### 🚀 Desenvolvido por: **CodeWave Studio**
+
+### 👨‍💻 Integrantes:
+- Samuel Fernandes
+- Gabriel Lyno
+- Nicolas Teixeira
 
 ---
 
