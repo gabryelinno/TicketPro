@@ -2,6 +2,11 @@
 
 ### 🚀 Desenvolvido por: **CodeWave**
 
+### 👨‍💻 Integrantes:
+- Samuel Fernandes
+- -Gabriel Lyno
+- Nicolas Teixeira
+
 ---
 
 ## 📋 Visão Geral
