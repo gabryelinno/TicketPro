@@ -4,7 +4,7 @@
 
 ### 👨‍💻 Integrantes:
 - Samuel Fernandes
-- -Gabriel Lyno
+- Gabriel Lyno
 - Nicolas Teixeira
 
 ---
