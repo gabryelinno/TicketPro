@@ -5,6 +5,20 @@ body {
     margin: 0%;
 }
 
+/* Tela da Homepage */
+
+#h1-home {
+
+}
+
+#cont-login {
+
+}
+
+#cont-cadastro {
+
+}
+
 /* Tela de Login */
 
 .retangulo-login {
@@ -92,3 +106,6 @@ body {
     color: #ffffff;
     border-radius: 30px;
 }
+
+/* Tela Sistema do Usuário */
+
