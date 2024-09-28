@@ -1,22 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Inter', sans-serif;
-    display: flex;
-    height: 100vh;
-    margin: 0%;
 }
 
 /* Tela da Homepage */
 
-#h1-home {
-
+header {
+    height: 70px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #11C870;
+    color: #ffffff;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#cont-login {
-
+.logo {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
 }
 
-#cont-cadastro {
+.logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
 
+.logo h1 {
+    margin-left: 10px;
+    font-size: 26px;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+}
+
+.logo img {
+    width: 45px;
+    height: auto;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+nav ul {
+    margin-right: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+nav ul li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #11C870;
+    border-radius: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid #ffffff;
+}
+
+nav ul li a:hover {
+    background-color: #11C870; 
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+#container-home {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+#img-home {
+    width: 550px;
+    height: auto;
+}
+
+#texto-home {
+    font-family: 'Lato', sans-serif;
+    color: #555555;
+    font-weight: 400;
+    padding: 40px;
+    margin: 10px;
+}
+
+#h1-ola {
+    font-size: 34px;
+}
+
+#h1-ola .ola {
+    font-size: 50px;
+}
+
+#h1-ola .bem-vindo {
+    margin-left: 10px;
+}
+
+#h1-ola .ticketpro {
+    color: #11C870;
+    font-weight: bold;
+}
+
+#texto-home h2 {
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px;
 }
 
 /* Tela de Login */
@@ -35,7 +137,6 @@ body {
 #img-login {
     height: 500px;
     width: auto;
-    align-items: center;
 }
 
 #h1-login {
@@ -49,18 +150,17 @@ body {
 }
 
 .fundo-login {
-    width: 400px;
-    height: 500px;
-    margin-right: 20%;
-    margin-left: 20%;
-    margin-top: 5%;
+    width: 500px;
+    height: 600px;
     background-color: #ffffff;
-    border-radius: 40px;
+    border-radius: 50px;
     padding: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin: auto;
 }
 
 #bt-usuario {
@@ -75,7 +175,7 @@ body {
     border-radius: 30px;
 }
 
-#bt-entrar{
+#bt-entrar, #bt-criar-conta {
     height: 40px;
     width: 300px;
     font-family: ;
@@ -97,15 +197,4 @@ body {
     border-radius: 30px;
 }
 
-#bt-criar-conta{
-    height: 40px;
-    width: 300px;
-    font-family: ;
-    font-size: 16px;
-    background-color: #11C870;
-    color: #ffffff;
-    border-radius: 30px;
-}
-
 /* Tela Sistema do Usuário */
-
