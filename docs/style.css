@@ -429,7 +429,7 @@ nav ul li a:hover {
 }
 
 /* Ajuste no input para que o texto não sobreponha os ícones */
-input {
+.input {
     padding-left: 45px; /* Espaço suficiente para o ícone à esquerda */
 }
 
