@@ -26,12 +26,30 @@
             <form id="form-cad" action="/caminho-para-seu-script" method="post">
                 <h1>Criar uma Conta</h1>
 
-                <input id="bt-usu2" type="text" name="usuario" minlength="3" maxlength="20" required placeholder="Usuário">
+                <!-- Campo de Usuario com icon-->
+                <div class="input-container">
+                    <input id="bt-usu2" type="text" name="usuario" minlength="3" maxlength="20" required placeholder="Usuário">
+                    <img src="img/user-icon.png" class="icon" alt="Usuário">
+                </div>
                 <br>
-                <input id="bt-email" type="email" name="email" required placeholder="E-mail">
+
+                <!-- Campo E-mail com ícone -->
+                <div class="input-container">
+                    <input id="bt-email" type="email" name="email" required placeholder="E-mail">
+                    <img src="img/mail-icon.png" class="icon" alt="E-mail">
+                </div>
                 <br>
-                <input id="bt-senha2" type="password" name="senha" minlength="6" required placeholder="Senha" autocomplete="off">
+
+                <!-- Campo Senha com ícones de cadeado e olho -->
+                <div class="input-container">
+                    <input id="bt-senha2" type="password" name="senha" minlength="6" required placeholder="Senha" autocomplete="off">
+                    <!-- Ícone de cadeado à esquerda -->
+                    <img src="img/lock-icon.png" class="icon" alt="Cadeado">
+                    <!-- Ícone de olho à direita -->
+                    <img src="img/eye-icon.png" class="icon eye-icon" alt="Mostrar/Ocultar" onclick="togglePassword()">
+                </div>
                 <br>
+
                 <button type="submit">Criar Conta</button>
                 <br>
                 <p>Já tem uma conta? <a href="login.html">Entre aqui</a></p>
@@ -47,3 +65,19 @@
 </body>
 
 </html>
+
+
+<script>
+    function togglePassword() {
+        var senhaInput = document.getElementById('bt-senha2');
+        var senhaIcon = document.querySelector('.eye-icon');
+
+        if (senhaInput.type === 'password') {
+            senhaInput.type = 'text';
+            senhaIcon.src = 'img/eye-icon-open.png'; // Ícone de olho aberto
+        } else {
+            senhaInput.type = 'password';
+            senhaIcon.src = 'img/eye-icon.png'; // Ícone de olho fechado
+        }
+    }
+</script>
