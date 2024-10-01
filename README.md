@@ -7,6 +7,9 @@
 - Gabriel Lyno
 - Nicolas Teixeira
 
+###Design
+https://www.figma.com/design/B9EuGkn0scFT3o4IaybdDW/Sistema-de-Chamados?node-id=0-1&t=BKMBBxgBg3ryyJtK-1
+
 ---
 
 ## 📋 Visão Geral
