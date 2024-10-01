@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/gestao-de-dados (1).png" type="image/x-icon">
+    <title>Criar Chamado - TicketPro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .barra-lateral2 {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Barra Lateral */
+        .sidebar2 {
+            width: 250px;
+            background-color: #28a745;
+            padding: 20px;
+            color: white;
+        }
+
+        .sidebar2 h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .sidebar2 ul {
+            list-style: none;
+        }
+
+        .sidebar2 ul li {
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar2 ul li i {
+            margin-right: 10px;
+        }
+
+        .sidebar2 ul li:hover {
+            background-color: #218838;
+            cursor: pointer;
+        }
+
+        .sidebar2 ul li a {
+            color: white;
+            text-decoration: none;
+            /* Remove o sublinhado */
+        }
+
+        /* Conteúdo Principal */
+        .main-content2 {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .header2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .header2 h1 {
+            font-size: 24px;
+        }
+
+        .user-info2 {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-info2 span {
+            margin-right: 10px;
+        }
+
+        .user-avatar2 {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="barra-lateral2">
+
+        <div class="sidebar2">
+            <h2>TicketPro</h2>
+            <ul>
+                <li><a href="pagina-inicial.html"><i class="fas fa-home2"></i>Página Inicial</a></li>
+                <li><a href="criar-chamado.html"><i class="fas fa-plus-circle2"></i>Criar Chamado</a></li>
+                <li><a href="chamados.html"><i class="fas fa-ticket-alt2"></i>Chamados</a></li>
+            </ul>
+        </div>
+        
+
+
+</html>
+
+<!-- descrição para chamado -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicketPro - Criar Chamado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #28a745;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            color: white;
+        }
+        .sidebar h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            margin: 10px 0;
+        }
+        .sidebar a:hover {
+            background-color: #28a745;
+            padding-left: 10px;
+        }
+        .container {
+            margin-left: 270px;
+            padding: 20px;
+            width: calc(100% - 270px);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select, input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #28a745;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        textarea {
+            height: 150px;
+            resize: none;
+        }
+        .description-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .description-bar select {
+            width: 20%;
+            margin-right: 10px;
+        }
+        .file-info {
+            color: #888;
+            font-size: 12px;
+        }
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #28a745;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h1>TicketPro</h1>
+        <a href="#">Página Inicial</a>
+        <a href="#">Criar Chamado</a>
+        <a href="#">Chamados</a>
+    </div>
+
+    <div class="container">
+        <h2>Criar Chamado</h2>
+
+        <div class="form-group">
+            <label for="urgencia">Urgência</label>
+            <select id="urgencia">
+                <option>Nível da Urgência</option>
+                <option>Baixa</option>
+                <option>Média</option>
+                <option>Alta</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="tipo">Tipo</label>
+            <select id="tipo">
+                <option>----------</option>
+                <option>Problema</option>
+                <option>Dúvida</option>
+                <option>Solicitação</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="categoria">Categoria</label>
+            <select id="categoria">
+                <option>----------</option>
+                <option>Hardware</option>
+                <option>Software</option>
+                <option>Rede</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" placeholder="Campo Obrigatório*">
+        </div>
+
+        <div class="form-group">
+            <label for="descricao">Descrição</label>
+            <div class="description-bar">
+                <select>
+                    <option>Simples</option>
+                    <option>Avançado</option>
+                </select>
+                <span class="file-info">Arquivo(s) Max 2 MB</span>
+            </div>
+            <textarea id="descricao" placeholder="Campo Obrigatório*"></textarea>
+        </div>
+
+        <button class="btn">Enviar Chamado</button>
+
+        <div class="footer">
+             </div>  
+            </div> 
+        </div>
+
+</body>
+
+</html>
