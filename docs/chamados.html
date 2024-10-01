@@ -4,115 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/gestao-de-dados (1).png" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/gestao-de-dados.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Chamados - TicketPro</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f4f4f4;
-        }
-
-        .barra-lateral3 {
-            display: flex;
-            height: 100vh;
-        }
-
-        /* Barra Lateral */
-        .sidebar3 {
-            width: 250px;
-            background-color: #28a745;
-            padding: 20px;
-            color: white;
-        }
-
-        .sidebar3 h2 {
-            font-size: 24px;
-            margin-bottom: 30px;
-        }
-
-        .sidebar3 ul {
-            list-style: none;
-        }
-
-        .sidebar3 ul li {
-            padding: 15px 0;
-            display: flex;
-            align-items: center;
-        }
-
-        .sidebar3 ul li i {
-            margin-right: 10px;
-        }
-
-        .sidebar3 ul li:hover {
-            background-color: #218838;
-            cursor: pointer;
-        }
-
-        .sidebar3 ul li a {
-            color: white;
-            text-decoration: none;
-            /* Remove o sublinhado */
-        }
-
-        /* Conteúdo Principal */
-        .main-content3 {
-            flex-grow: 1;
-            padding: 20px;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-        }
-
-        .header3 {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-bottom: 1px solid #ccc;
-        }
-
-        .header3 h1 {
-            font-size: 24px;
-        }
-
-        .user-info3 {
-            display: flex;
-            align-items: center;
-        }
-
-        .user-info3 span {
-            margin-right: 10px;
-        }
-
-        .user-avatar3 {
-            background-color: #28a745;
-            color: white;
-            padding: 10px;
-            border-radius: 50%;
-        }
-    </style>
-
 </head>
 
 <body>
-    <div class="barra-lateral3">
+    <div class="container-chamados">
 
         <div class="sidebar3">
             <h2>TicketPro</h2>
             <ul>
-                <li><a href="pagina-inicial.html"><i class="fas fa-home2"></i>Página Inicial</a></li>
-                <li><a href="criar-chamado.html"><i class="fas fa-plus-circle2"></i>Criar Chamado</a></li>
-                <li><a href="chamados.html"><i class="fas fa-ticket-alt2"></i>Chamados</a></li>
+                <li><a href="pagina-inicial.html"><i></i>Página Inicial</a></li>
+                <li><a href="criar-chamado.html"><i></i>Criar Chamado</a></li>
+                <li><a href="chamados.html"><i></i>Chamados</a></li>
             </ul>
         </div>
 
@@ -124,6 +29,11 @@
                     <div class="user-avatar3">PS</div>
                 </div>
             </div>
+
+            <h2 id="creditos"></h2>
+                Desenvolvido por <span id="codewave">CodeWave Stúdio</span>
+            </h2>
+
         </div>
 
 </body>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +10,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    background-color: white;
 }
 
 /* ============================================================================================================= */
@@ -441,3 +442,378 @@ nav ul li a:hover {
 
 /* ============================================================================================================= */
 /* Tela Sistema do Usuário */
+
+/* Tela Pagina Inicial */
+.container-pginicial {
+    display: flex;
+    height: 100vh;
+}
+
+/* Barra Lateral */
+.sidebar1 {
+    width: 250px;
+    background-color: #11C870;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar1 h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.sidebar1 ul {
+    list-style: none;
+}
+
+.sidebar1 ul li {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar1 ul li i {
+    margin-right: 10px;
+}
+
+.sidebar1 ul li:hover {
+    background-color: #0eb464;
+    cursor: pointer;
+}
+
+.sidebar1 ul li a {
+    color: white;
+    width: 100%;
+    text-decoration: none;
+}
+
+.main-content1 {
+    flex-grow: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 1px 10px #cdcdcd;
+}
+
+.header1 h1 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333333;
+}
+
+.user-info1 {
+    display: flex;
+    align-items: center;
+}
+
+.user-info1 span {
+    margin-right: 10px;
+}
+
+.user-avatar1 {
+    background-color: #11C870;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.status-panel1 {
+    background-color: white;
+    padding: 20px;
+    margin: 15vh;
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#content-status {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.status-panel1 h2 {
+    font-size: 24px;
+    color: #333333;
+}
+
+.bt-criar-chamado {
+    background-color: #11C870;
+    color: white;
+    padding: 10px 20px;
+    font-size: 17px;
+    border: 1px solid #11C870;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bt-criar-chamado:hover {
+    background-color: white;
+    color: #11C870;
+    
+}
+
+.status-item1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    color: #333333;
+}
+
+.status-item1:last-child {
+    border-bottom: none;
+}
+
+.status-item1 span {
+    display: flex;
+    align-items: center;
+}
+
+.status-icon1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.status-new {
+    background-color: green;
+}
+
+.status-in-progress {
+    background-color: orange;
+}
+
+.status-pending {
+    background-color: yellow;
+}
+
+.status-resolved {
+    background-color: black;
+}
+
+.status-deleted {
+    background-color: red;
+}
+
+.status-count1 {
+    background-color: #11C870;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.status-item1 a {
+    color: inherit;
+    width: 100%;
+}
+
+.main-content1 #creditos {
+    font-size: 14px;
+    font-weight: 400;
+    color: #949494;
+    text-align: center;
+    margin-top: auto; 
+    padding: 10px;
+}
+/* ==================================================================================================================== */
+/* Tela Criar Chamado */
+.container-criar-chamado {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar2 {
+    width: 250px;
+    background-color: #11C870;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar2 h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.sidebar2 ul {
+    list-style: none;
+}
+
+.sidebar2 ul li {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar2 ul li i {
+    margin-right: 10px;
+}
+
+.sidebar2 ul li:hover {
+    background-color: #0eb464;
+    cursor: pointer;
+}
+
+.sidebar2 ul li a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+
+.main-content2 {
+    flex-grow: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 1px 10px #cdcdcd;
+}
+
+.header2 h1 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333333;
+}
+
+.user-info2 {
+    display: flex;
+    align-items: center;
+}
+
+.user-info2 span {
+    margin-right: 10px;
+}
+
+.user-avatar2 {
+    background-color: #11C870;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main-content2 #creditos {
+    font-size: 14px;
+    font-weight: 400;
+    color: #949494;
+    text-align: center;
+    margin-top: auto; 
+    padding: 10px;
+}
+
+/* ========================================================================================================================== */
+/* Tela Chamados */
+
+.container-chamados {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar3 {
+    width: 250px;
+    background-color: #11C870;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar3 h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.sidebar3 ul {
+    list-style: none;
+}
+
+.sidebar3 ul li {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar3 ul li i {
+    margin-right: 10px;
+}
+
+.sidebar3 ul li:hover {
+    background-color: #0eb464;
+    cursor: pointer;
+}
+
+.sidebar3 ul li a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+
+.main-content3 {
+    flex-grow: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.header3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 1px 10px #cdcdcd;
+}
+
+.header3 h1 {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.user-info3 {
+    display: flex;
+    align-items: center;
+    
+}
+
+.user-info3 span {
+    margin-right: 10px;
+}
+
+.user-avatar3 {
+    background-color: #11C870;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main-content3 #creditos {
+    font-size: 14px;
+    font-weight: 400;
+    color: #949494;
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+}
