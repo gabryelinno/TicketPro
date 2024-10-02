@@ -403,6 +403,43 @@ nav ul li a:hover {
     color: #11C870;
 }
 
+/* Estilizando os containers dos inputs*/
+.input-container {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para os icons */
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 15px; 
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none; /* Impede que o ícone interfira no clique */
+}
+
+/* Ícone do olho fica a direita */
+.eye-icon {
+    right: 15px;
+    left: auto;
+    cursor: pointer;
+}
+
+/* Ajuste no input para que o texto não sobreponha os ícones */
+.input {
+    padding-left: 45px; /* Espaço suficiente para o ícone à esquerda */
+}
+
+/* Ajuste no input de senha para o ícone de olho à direita */
+#bt-senha2 {
+    padding-left: 45px; /* Espaço para o ícone de cadeado à esquerda */
+    padding-right: 45px; /* Espaço para o ícone de olho à direita */
+}
+
 /* ============================================================================================================= */
 /* Tela Sistema do Usuário */
 
