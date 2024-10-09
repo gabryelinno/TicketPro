@@ -136,7 +136,7 @@ nav ul li a:hover {
 
 .retangulo {
     display: flex;
-    background-color: #11C870;
+    background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
     border-top-right-radius: 5vh;
     border-bottom-right-radius: 5vh;
     align-items: center;
@@ -221,7 +221,7 @@ nav ul li a:hover {
     width: 45vh;
     font-size: 3vh;
     font-weight: 600;
-    background-color: #11C870;
+    background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
     box-shadow: 0 0 2vh rgba(0, 0, 0, 25%);
     color: #ffffff;
     border-radius: 10vh;
@@ -274,7 +274,7 @@ nav ul li a:hover {
 
 .retangulo2 {
     display: flex;
-    background-color: #11C870;
+    background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
     border-top-right-radius: 5vh;
     border-bottom-right-radius: 5vh;
     align-items: center;
@@ -363,7 +363,7 @@ nav ul li a:hover {
     width: 45vh;
     font-size: 3vh;
     font-weight: 600;
-    background-color: #11C870;
+    background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
     box-shadow: 0 0 2vh rgba(0, 0, 0, 25%);
     color: #ffffff;
     border-radius: 10vh;
@@ -404,43 +404,6 @@ nav ul li a:hover {
     color: #11C870;
 }
 
-/* Estilizando os containers dos inputs*/
-.input-container {
-    position: relative;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-}
-
-/* Estilo para os icons */
-.icon {
-    position: absolute;
-    top: 50%;
-    left: 15px; 
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    pointer-events: none; /* Impede que o ícone interfira no clique */
-}
-
-/* Ícone do olho fica a direita */
-.eye-icon {
-    right: 15px;
-    left: auto;
-    cursor: pointer;
-}
-
-/* Ajuste no input para que o texto não sobreponha os ícones */
-.input {
-    padding-left: 45px; /* Espaço suficiente para o ícone à esquerda */
-}
-
-/* Ajuste no input de senha para o ícone de olho à direita */
-#bt-senha2 {
-    padding-left: 45px; /* Espaço para o ícone de cadeado à esquerda */
-    padding-right: 45px; /* Espaço para o ícone de olho à direita */
-}
-
 /* ============================================================================================================= */
 /* Tela Sistema do Usuário */
 
@@ -453,7 +416,7 @@ nav ul li a:hover {
 /* Barra Lateral */
 .sidebar1 {
     width: 250px;
-    background-color: #11C870;
+    background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
     padding: 20px;
     color: white;
 }
@@ -549,18 +512,18 @@ nav ul li a:hover {
 }
 
 .bt-criar-chamado {
-    background-color: #11C870;
+    background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
     color: white;
     padding: 10px 20px;
     font-size: 17px;
     border: 1px solid #11C870;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.8s, color 0.8s;
 }
 
 .bt-criar-chamado:hover {
-    background-color: white;
+    background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff);
     color: #11C870;
     
 }
@@ -640,7 +603,7 @@ nav ul li a:hover {
 
 .sidebar2 {
     width: 250px;
-    background-color: #11C870;
+    background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
     padding: 20px;
     color: white;
 }
@@ -734,7 +697,7 @@ nav ul li a:hover {
 
 .sidebar3 {
     width: 250px;
-    background-color: #11C870;
+    background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
     padding: 20px;
     color: white;
 }
