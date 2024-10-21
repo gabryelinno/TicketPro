@@ -337,16 +337,19 @@ nav ul li a:hover {
     }
 
     .fundo-form, .fundo-form2 {
-        margin: 0;
-        width: 90%;
+        margin: 0 auto; /* Centraliza o formulário */
+        width: 90%; /* Mantém o formulário responsivo */
+        max-width: 400px; /* Define um tamanho máximo padronizado */
         height: auto;
     }
 
     .fundo-form h1, .fundo-form2 h1 {
         font-size: 4vh;
         margin-top: 2vh;
+        text-align: center; /* Centraliza o título */
     }
 }
+
 
 
 /* ============================================================================================================= */
@@ -505,8 +508,9 @@ nav ul li a:hover {
     }
 
     .fundo-form, .fundo-form2 {
-        margin: 0;
-        width: 90%;
+        margin: 0 auto; /* Centraliza o formulário */
+        width: 90%; /* Mantém o formulário responsivo */
+        max-width: 400px; /* Tamanho máximo para padronizar */
         height: auto;
     }
 
@@ -515,6 +519,7 @@ nav ul li a:hover {
         margin-top: 2vh;
     }
 }
+
 
 
 
